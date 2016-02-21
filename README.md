@@ -9,9 +9,12 @@ Eventify provides one simple platform for event planning by using location. Even
 ## Why did we create this application?
 The sphere of Event Planning is huge and we wanted to do our bit in making this process much simpler. We realized this was possible by creating a platform that was freely available to all people and aids in the process of creating events. One of our main features is HYPE that gives the organizer an idea of the number of people attending the event .i.e. the level of interest. 
 
-## Description of Application   
+## Description of Application  
+
 --> For Event Attendees, once a person signs up for the application, he/she can see the events happening around the area they are currently in. The individual has the option to browse through categories and search for events according to date, time, location. Attendees can RSVP accordingly and express interest (using HYPE feature). 
+
 --> For Event Organizers, once a person signs up for the application, he/she can see the events happening around the area they are currently in. Organizers can create events and edit their event page according to his/her convenience. Once the event has been created on Eventify, a feature exists such that it can be shared on Facebook or added to Google calendar or added to Microsoft Calendar. The HYPE feature gives the organizers an idea of how interested people are in their event and the data  of previous events created by them will be saved on the application (analytics like HYPE for the event, number of people who attended the event, etc.).
+
 --> A discussion forum also exists for the attendees to interact with each other and/or the organizer (staying Anonymous will be an option). 
   
 ## Features in brief 
