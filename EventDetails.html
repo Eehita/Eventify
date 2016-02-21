@@ -1,60 +1,122 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <title>Eventify | Simplify event planning</title>
-    <link rel="stylesheet" href="EventDetails.css">
-</head>
-<body>
-  
-        
-   
-    <div class="analytics-intro">
-        <p>Nostalgia - Date : 21 February 2016 , Time : 3 : 00 pm</p>
-    </div>
 
-    <br />
-    
+	<style>
+	body {
+		font-size:80px;
+		background-color: rgb(0, 0, 51);
+		font-family:'Brush Script MT';
+		text-align:center;
+	}
+	h2 {
+		text-align: left;
+		font: 20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+		color: white; 
+	}
+	.button {
+		background-color: #808080;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		width: 20%;
+		border-radius: 8px;
+	}
+	h3 {
+		text-align: right;
+		font: 20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+		color: white; 
+	}
 
-    <div class="intro">
-        <p>Analytics of Interest expressed in the event</p>
-    </div>
+	<body>
+	</style>
+	</head>
 
-    <br />
-    
 
-    <div class="graph" style="text-align:center; float:right; margin-right:600px">
-        <span class="bar"></span>
-        <span class="bar-interested" style="height: 100px;"></span>
-        <span class="bar-not-going" style="height: 50px;"></span>
-        <span class="bar-going" style="height: 200px;"></span>
-    </div>
+	<form>
+	
+	<font color="palevioletred">Event Details</font>
 
-    <br/>
-    <br/>
-    <br/>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br/>
-    <br/>
-    <br/>
-    <div class="hola">
-        <p>Nostalgia is a musical experience geared towards the music enthusiasts who prefer a relaxing afternoon listening to some of the 
-        most popular classical music of all time. With artists ranging from Hans Zimmer to Yanni, all are welcome to be a part of this unique experience. 
-        Due to the high popularity of the artists performing, all interested are highly encouraged to RSVP/check in prior to the event.</p>
-    </div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <a href="#" class="button1" style="float:right">Going</a>
-    <a href="#" class="button2" style="float:right">Interested</a>
-    <a href="#" class="button3" style="float:right">Not Going</a>
-</body>
-</html>
+	<h2>
+
+	<fieldset>
+	<legend> Event Name </legend>
+	<input type="text" name="Event Name">
+	<br> </fieldset> 
+	<fieldset>
+	<legend> Organizer Name / Organization </legend>
+	<input type="text" name="Organizer Name / Organization">
+	<br> </fieldset> 
+	<fieldset>
+	<legend> Description </legend>
+	<input type="text" name="Description">
+	</fieldset>
+
+	<fieldset>
+	<legend>  Picture (We recommend it!) </legend>
+	<form action="demo_form.asp">
+	<input type="file" name="pic" accept="">
+	</form>
+	</fieldset>
+
+	<fieldset>
+	<legend> Location </legend>
+	<form>
+	<input type="text" name="one" placeholder="Address line 1"><br>
+	<input type="text" name="two" placeholder="Address line 2"><br>
+	<input type="text" name="three" placeholder="City - ZipCode"><br>
+	<input type="text" name="four" placeholder="State"><br>
+	<input type="text" name="five" placeholder="Country"><br>
+	</form>
+	<iframe
+	width="450"
+	height="250"
+	frameborder="0" style="border:0"
+	src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDazqGTbn4pj-13_36qsdNja93LG8SeKxc
+	&q=search" allowfullscreen>
+	</iframe>
+	</fieldset>
+
+	<fieldset>
+	<legend> Date and Time </legend>
+	<form>
+	<input type="datetime-local" name="bdaytime">
+	</form>
+	</fieldset> 
+
+	<fieldset>
+	<legend> Please select ONE category that fits your event best </legend>
+	<input type="radio" name="trial" ><font color="white"> Educational<br>
+	<input type="radio" name="trial" > Commemorative Events<br>
+	<input type="radio" name="trial" > Bridal events<br>
+	<input type="radio" name="trial" > Product launch events<br>
+	</fieldset>
+
+
+	<fieldset>
+	<legend> Advertise your event! </legend>
+	<form action="demo_form.asp">
+	<input type="checkbox" name="Facebook" id="FB" value="Facebook" /> Make a Facebook event <br >
+	<input type="checkbox" name="Gmail" id="Gmail" value="Gmail"  /> Create Google calendar event <br >
+	<input type="checkbox" name="Outlook" id="Outlook" value="Outlook" /> Create Outlook calendar event <br>
+	</form>
+	</fieldset>
+
+	</h2>
+
+	<h3>
+
+	<a href="Home.html" class="button">Save</a>
+	<a href="Home.html" class="button">Go Live!</a>
+	<a href="Home.html" class="button">Cancel</a>
+
+	</h3>
+
+	</form>
+	</body>
+	</html>

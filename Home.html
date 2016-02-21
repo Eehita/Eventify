@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  #map {
+    width: 1430px;
+    height: 730px;    
+    position: relative;
+    z-index: 250;
+  }
+
+  body {
+    font: 20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+    background-color: rgb(0, 0, 51);
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 90;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    position: relative;
+    z-index: 2000;
+  }
+  li a, .dropbtn2 {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    position: relative;
+    z-index: 3000;
+  }
+
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: palevioletred;
+  }
+  li a:hover, .dropdown2:hover .dropbtn2 {
+    background-color: palevioletred;
+  }
+
+  li.dropdown {
+    display: inline-block;
+  }
+  li.dropdown2 {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown-content2 a:hover {background-color: #f1f1f1}
+
+  .show1 {display:block;}
+  .show2 {display:block;}
+
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li><a class="active" href="Hype.html">Check the hype!</a></li>
+    <li><a href="EventDetails.html">Create new event</a></li>
+    <li><a href="AttendEventsNearMe.html">Attend events near me</a></li>
+    <li><a href="#event4">Surprise Me!</a></li>
+    
+    <li class="dropdown2">
+      <a href="javascript:void(0)" class="dropbtn2" onclick="myFunction2()">My Events</a>
+      <div class="dropdown-content2" id="myDropdown2">
+        <a href="PrevEventDetails.html">Previous event details</a>
+        <a href="EventDetails.html">Edit created event</a>
+        <a href="DiscussionForum.html">Discussion Forum</a>
+      </div>
+    </li>
+
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Profile</a>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="#">About Me</a>
+        <a href="#">Settings</a>
+        <a href="LogIn.html">Log Out</a>
+      </div>
+    </li>
+  </ul>
+
+  <iframe src="https://www.google.com/maps/d/embed?mid=zPFW1y5FL-to.kKe4hoClLBPs" width="1420" height="700"></iframe>
+
+  <div id="map"></div>
+  <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show2");
+}
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show1");
+}
+
+/*function initMap() {
+  var mapDiv = document.getElementById('map');
+  var map = new google.maps.Map(mapDiv, {
+    center: {lat: 44.540, lng: -78.546},
+    zoom: 8
+  });
+
+  var myLatLng = {lat: 40.000000, lng: -86.000000};
+  var myLatLng2 = {lat: 40.424956, lng: -86.911459};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: myLatLng
+  });
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: myLatLng2
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+  var marker2 = new google.maps.Marker({
+    position: myLatLng2,
+    map: map,
+    title: 'Hello World!'
+  });
+
+}*/
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn2')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+async defer></script>
+</body>
+</html>
