@@ -1,0 +1,32 @@
+﻿body {
+    background-image:url("Events-Banner.png");
+}
+
+.header {
+    background-color:black;
+    text-align:center;
+    z-index: 1;
+	position: fixed;
+	width: 100%;
+    font-size:50px;
+}
+
+#ordain {
+    margin-top:150px;
+    color:orange;
+
+}
+
+.button {
+    background-color: #808080;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius:8px;
+    cursor: pointer;
+}

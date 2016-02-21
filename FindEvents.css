@@ -1,0 +1,28 @@
+﻿body {
+    background-image:url("Events-Banner.png");
+}
+
+.intro {
+    color:orange;
+    font-family:'Brush Script MT';
+    font-size:xx-large;
+    border:2px dotted;
+    text-align:center;
+    margin-top:5px;
+}
+
+.button {
+    background-color: grey;
+    padding-top:3px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    align-content:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius:8px;
+    cursor: pointer;
+}

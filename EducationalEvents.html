@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Eventify | Simplify Event Planning</title>
+    <link rel="stylesheet" href="EducationalEvents.css">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+</head>
+<body>
+    <br/>
+    <br/>
+    <p style="font-family: 'Brush Script MT'; color: violet; font-size: 70px; text-align: center;">Educational Events</p>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <p style="font-size: xx-large;text-align:center;font-family:'Brush Script MT';color:orange">Please enter your preferred date and time of the events you would like to attend</p>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div>
+    <div id="datetimepicker" class="input-append date" style="text-align:center">
+        <input type="text"></input>
+        <span class="add-on">
+            <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+        </span>
+    </div>
+    <script type="text/javascript"
+            src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script>
+    <script type="text/javascript"
+            src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+            src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript"
+            src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+    </script>
+    <script type="text/javascript">
+        $('#datetimepicker').datetimepicker({
+            language: 'en',
+            format: 'dd/MM/yyyy hh:mm:ss'
+        });
+    </script>
+ </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <input type="button" style="float:right; margin-right:585px;" class="button" value="Submit details" onclick="Redirect(); return false;"></p>
+    <script>
+        function Redirect() {
+            window.location.href = 'http://localhost:1731/FindEvents.html';
+        }
+    </script>
+
+</body>
+</html>
